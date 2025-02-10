@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "projects": {
+        "trading-212-dashboard": {
+            "root": "",
+            "sourceRoot": "src",
+            "projectType": "application",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-angular:browser",
+                    "options": {
+                        "outputPath": "dist/trading-212-dashboard",
+                        "index": "src/index.html",
+                        "main": "src/main.ts",
+                        "tsConfig": "tsconfig.app.json"
+                    }
+                },
+                "serve": {
+                    "builder": "@angular-devkit/build-angular:dev-server",
+                    "options": {
+                        "buildTarget": "trading-212-dashboard:build"
+                    }
+                }
+            }
+        }
+    }
+}
