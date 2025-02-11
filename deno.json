@@ -5,7 +5,11 @@
     "imports": {
         "@angular-devkit/build-angular": "npm:@angular-devkit/build-angular@^19.1.6",
         "@angular/core": "npm:@angular/core@^19.1.5",
-        "@std/assert": "jsr:@std/assert@1"
+        "@angular/platform-browser": "npm:@angular/platform-browser@^19.1.5",
+        "@std/assert": "jsr:@std/assert@1",
+        "zone.js": "npm:zone.js@^0.15.0"
     },
+
+    "type": "module",
     "nodeModulesDir": "auto"
 }

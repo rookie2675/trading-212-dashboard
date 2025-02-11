@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
+        "noEmit": true,
         "target": "ES2024",
-        "noImplicitReturns": true
+        "noImplicitReturns": true,
+        "moduleResolution": "node",
+        "allowImportingTsExtensions": true
     }
 }

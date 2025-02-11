@@ -9,6 +9,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
+                        "polyfills": ["zone.js"],
                         "outputPath": "dist/trading-212-dashboard",
                         "index": "src/index.html",
                         "main": "src/main.ts",

@@ -4,7 +4,9 @@
     "jsr:@std/assert@1": "1.0.11",
     "jsr:@std/internal@^1.0.5": "1.0.5",
     "npm:@angular-devkit/build-angular@^19.1.6": "19.1.6_@angular+compiler-cli@19.1.5__@angular+compiler@19.1.5__typescript@5.7.3_typescript@5.7.3_webpack@5.97.1_webpack-dev-server@5.2.0__webpack@5.97.1__@types+express@4.17.21_less@4.2.1_postcss@8.4.49_@babel+core@7.26.0_sass@1.83.1_terser@5.37.0",
-    "npm:@angular/core@^19.1.5": "19.1.5_rxjs@7.8.1_zone.js@0.15.0"
+    "npm:@angular/core@^19.1.5": "19.1.5_rxjs@7.8.1_zone.js@0.15.0",
+    "npm:@angular/platform-browser@^19.1.5": "19.1.5_@angular+common@19.1.5__@angular+core@19.1.5___rxjs@7.8.1___zone.js@0.15.0__rxjs@7.8.1_@angular+core@19.1.5__rxjs@7.8.1__zone.js@0.15.0",
+    "npm:zone.js@0.15": "0.15.0"
   },
   "jsr": {
     "@std/assert@1.0.11": {
@@ -152,6 +154,14 @@
         "watchpack"
       ]
     },
+    "@angular/common@19.1.5_@angular+core@19.1.5__rxjs@7.8.1__zone.js@0.15.0_rxjs@7.8.1": {
+      "integrity": "sha512-8jR3c5IBMlfiiHvrO8Y2z8y9n4Moy4mI7bS0eu3hmI3m5Vvrgd2Z4GCaQ/Dt4wCtFxcgSsVXiF+/H0QbVdwulA==",
+      "dependencies": [
+        "@angular/core",
+        "rxjs",
+        "tslib"
+      ]
+    },
     "@angular/compiler-cli@19.1.5_@angular+compiler@19.1.5_typescript@5.7.3": {
       "integrity": "sha512-7IHfGklqiTsDYjk2SgOi5sG63gZ60LguT7dhMGtUdy+fUyK0KGofE1w74LwPHQ3huCdu3rBp7HZvC0/IsmiYtA==",
       "dependencies": [
@@ -179,6 +189,14 @@
         "rxjs",
         "tslib",
         "zone.js"
+      ]
+    },
+    "@angular/platform-browser@19.1.5_@angular+common@19.1.5__@angular+core@19.1.5___rxjs@7.8.1___zone.js@0.15.0__rxjs@7.8.1_@angular+core@19.1.5__rxjs@7.8.1__zone.js@0.15.0": {
+      "integrity": "sha512-wqM4OlGncXNmROTS0mpUpnzzG5DsIZi1U0gzQp5bDOknaFFmg2C2ExCi29CwFZfaOeDw135AyXtu4qItfDOW9A==",
+      "dependencies": [
+        "@angular/common",
+        "@angular/core",
+        "tslib"
       ]
     },
     "@babel/code-frame@7.26.2": {
@@ -4122,7 +4140,9 @@
     "dependencies": [
       "jsr:@std/assert@1",
       "npm:@angular-devkit/build-angular@^19.1.6",
-      "npm:@angular/core@^19.1.5"
+      "npm:@angular/core@^19.1.5",
+      "npm:@angular/platform-browser@^19.1.5",
+      "npm:zone.js@0.15"
     ]
   }
 }
