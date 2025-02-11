@@ -2,6 +2,7 @@
     "tasks": {
         "dev": "deno run --watch main.ts"
     },
+    
     "imports": {
         "@angular-devkit/build-angular": "npm:@angular-devkit/build-angular@^19.1.6",
         "@angular/core": "npm:@angular/core@^19.1.5",
