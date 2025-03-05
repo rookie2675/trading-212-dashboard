@@ -14,15 +14,33 @@
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "tsConfig": "tsconfig.app.json"
+                    },
+                    "configurations": {
+                        "development": {
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.development.ts"
+                                }
+                            ]
+                        }
                     }
                 },
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
                         "buildTarget": "trading-212-dashboard:build"
+                    },
+                    "configurations": {
+                        "development": {
+                            "buildTarget": "trading-212-dashboard:build:development"
+                        }
                     }
                 }
             }
         }
+    },
+    "cli": {
+        "analytics": false
     }
 }
