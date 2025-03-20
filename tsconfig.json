@@ -3,5 +3,9 @@
         "target": "ES2024",
         "noImplicitReturns": true,
         "moduleResolution": "node"
+    },
+
+    "angularCompilerOptions": {
+        "strictTemplates": true
     }
 }
