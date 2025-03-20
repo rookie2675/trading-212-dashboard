@@ -1,6 +1,7 @@
 .vscode
 .angular
 
+dist
 node_modules
 
 environment.*
