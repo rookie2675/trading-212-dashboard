@@ -1,4 +1,4 @@
-package com.rookie2675.trading_212_dashboard;
+package com.rookie2675.trading212dashboard;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
