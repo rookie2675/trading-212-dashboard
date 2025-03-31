@@ -1,8 +1,8 @@
 {
     "tasks": {
-        "dev": "deno run --watch main.ts"
+        "dev": "ng serve"
     },
-    
+
     "imports": {
         "@angular-devkit/build-angular": "npm:@angular-devkit/build-angular@^19.2.4",
         "@angular/core": "npm:@angular/core@^19.2.3",
@@ -12,5 +12,9 @@
     },
 
     "type": "module",
-    "nodeModulesDir": "auto"
+    "nodeModulesDir": "auto",
+    "compilerOptions": {
+        "noImplicitReturns": true
+    },
+    "unstable": ["sloppy-imports"]
 }
