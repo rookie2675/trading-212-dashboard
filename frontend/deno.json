@@ -11,6 +11,12 @@
         "zone.js": "npm:zone.js@^0.15.0"
     },
 
+    "lint": {
+        "rules": {
+            "exclude": ["no-sloppy-imports"]
+        }
+    },
+
     "type": "module",
     "nodeModulesDir": "auto",
     "compilerOptions": {
