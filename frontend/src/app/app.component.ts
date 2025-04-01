@@ -1,7 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { ExchangeRateResponse } from "../types/ExchangeRateResponse";
 import { ExchangeRateService } from "../services/exchange-rate.service";
-import { CurrencyCode } from "../types/CurrencyCode";
 import { ExchangeRateRequest } from "../types/ExchangeRateRequest";
 
 @Component({
@@ -10,29 +9,16 @@ import { ExchangeRateRequest } from "../types/ExchangeRateRequest";
     templateUrl: "./app.component.html",
     providers: [ExchangeRateService],
 })
-export class AppComponent implements OnInit {
-    constructor(private exchangeRateService: ExchangeRateService) {}
+export class AppComponent {
+    constructor(private readonly exchangeRateService: ExchangeRateService) {}
 
     async getExchangeRate() {
-        const base: CurrencyCode = "USD";
-        const target: CurrencyCode[] = ["EUR", "GBP"];
         const request: ExchangeRateRequest = {
-            latest: base,
-            currencies: target,
+            baseCurrency: "USD",
+            targetCurrencies: ["EUR", "GBP"],
         };
-        let response: ExchangeRateResponse = await this.exchangeRateService.getExchangeRate(request);
 
-        const json = {
-            [base]: {
-                timestamp: Date.now(),
-                rates: {
-                    ...response.data,
-                },
-            },
-        };
-    }
-
-    ngOnInit(): void {
-        this.getExchangeRate();
+        const response: ExchangeRateResponse = await this.exchangeRateService.getExchangeRate(request);
+        console.log(response);
     }
 }
