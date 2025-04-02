@@ -6,6 +6,7 @@
     "npm:@angular-devkit/build-angular@^19.2.5": "19.2.5_@angular+compiler-cli@19.2.4__@angular+compiler@19.2.4__typescript@5.8.2_typescript@5.8.2_webpack@5.98.0_webpack-dev-server@5.2.0__webpack@5.98.0__@types+express@4.17.21_less@4.2.2_postcss@8.5.2_@babel+core@7.26.10_sass@1.85.0_terser@5.39.0",
     "npm:@angular/core@^19.2.4": "19.2.4_rxjs@7.8.1_zone.js@0.15.0",
     "npm:@angular/platform-browser@^19.2.4": "19.2.4_@angular+common@19.2.4__@angular+core@19.2.4___rxjs@7.8.1___zone.js@0.15.0__rxjs@7.8.1__zone.js@0.15.0_@angular+core@19.2.4__rxjs@7.8.1__zone.js@0.15.0_zone.js@0.15.0",
+    "npm:@angular/router@^19.2.4": "19.2.4_@angular+common@19.2.4__@angular+core@19.2.4___rxjs@7.8.1___zone.js@0.15.0__rxjs@7.8.1__zone.js@0.15.0_@angular+core@19.2.4__rxjs@7.8.1__zone.js@0.15.0_@angular+platform-browser@19.2.4__@angular+common@19.2.4___@angular+core@19.2.4____rxjs@7.8.1____zone.js@0.15.0___rxjs@7.8.1___zone.js@0.15.0__@angular+core@19.2.4___rxjs@7.8.1___zone.js@0.15.0__zone.js@0.15.0_rxjs@7.8.1_zone.js@0.15.0",
     "npm:zone.js@0.15": "0.15.0"
   },
   "jsr": {
@@ -196,6 +197,24 @@
       "dependencies": [
         "@angular/common",
         "@angular/core",
+        "tslib"
+      ]
+    },
+    "@angular/platform-browser@19.2.4_@angular+common@19.2.4__@angular+core@19.2.4___rxjs@7.8.1___zone.js@0.15.0__rxjs@7.8.1__zone.js@0.15.0_@angular+core@19.2.4__rxjs@7.8.1__zone.js@0.15.0_zone.js@0.15.0_rxjs@7.8.1": {
+      "integrity": "sha512-skP+Oq9hxh0hkLcs2bXgnt7Z+KKP5xZYzaHPEToLtPat6l6kSPjT0CJ+DE/8ce443hItAcCbn+JrKGC29nd2pw==",
+      "dependencies": [
+        "@angular/common",
+        "@angular/core",
+        "tslib"
+      ]
+    },
+    "@angular/router@19.2.4_@angular+common@19.2.4__@angular+core@19.2.4___rxjs@7.8.1___zone.js@0.15.0__rxjs@7.8.1__zone.js@0.15.0_@angular+core@19.2.4__rxjs@7.8.1__zone.js@0.15.0_@angular+platform-browser@19.2.4__@angular+common@19.2.4___@angular+core@19.2.4____rxjs@7.8.1____zone.js@0.15.0___rxjs@7.8.1___zone.js@0.15.0__@angular+core@19.2.4___rxjs@7.8.1___zone.js@0.15.0__zone.js@0.15.0_rxjs@7.8.1_zone.js@0.15.0": {
+      "integrity": "sha512-pnQX6gk8Z+YQFtnuqRDPEv+d9Up2oP1ZJk9/i/vnYS53PguSEtKgCBuiy6FQmn7SdrYFJ3+ZoV6ow9jhv00eqA==",
+      "dependencies": [
+        "@angular/common",
+        "@angular/core",
+        "@angular/platform-browser@19.2.4_@angular+common@19.2.4__@angular+core@19.2.4___rxjs@7.8.1___zone.js@0.15.0__rxjs@7.8.1__zone.js@0.15.0_@angular+core@19.2.4__rxjs@7.8.1__zone.js@0.15.0_zone.js@0.15.0_rxjs@7.8.1",
+        "rxjs",
         "tslib"
       ]
     },
@@ -4145,6 +4164,7 @@
       "npm:@angular-devkit/build-angular@^19.2.5",
       "npm:@angular/core@^19.2.4",
       "npm:@angular/platform-browser@^19.2.4",
+      "npm:@angular/router@^19.2.4",
       "npm:zone.js@0.15"
     ]
   }

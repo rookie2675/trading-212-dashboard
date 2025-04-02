@@ -7,6 +7,7 @@
         "@angular-devkit/build-angular": "npm:@angular-devkit/build-angular@^19.2.5",
         "@angular/core": "npm:@angular/core@^19.2.4",
         "@angular/platform-browser": "npm:@angular/platform-browser@^19.2.4",
+        "@angular/router": "npm:@angular/router@^19.2.4",
         "@std/assert": "jsr:@std/assert@^1.0.12",
         "zone.js": "npm:zone.js@^0.15.0"
     },

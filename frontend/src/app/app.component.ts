@@ -2,8 +2,10 @@ import { Component } from "@angular/core";
 import { ExchangeRateResponse } from "../types/ExchangeRateResponse";
 import { ExchangeRateService } from "../services/exchange-rate.service";
 import { ExchangeRateRequest } from "../types/ExchangeRateRequest";
+import { RouterOutlet } from "@angular/router";
 
 @Component({
+    imports: [RouterOutlet],
     standalone: true,
     selector: "app-root",
     templateUrl: "./app.component.html",
