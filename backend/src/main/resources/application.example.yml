@@ -1,6 +1,8 @@
 spring:
   application:
     name: "trading-212-dashboard"
+  profiles:
+    active: dev # Options: dev, uat, prod
 
 app:
   security:
