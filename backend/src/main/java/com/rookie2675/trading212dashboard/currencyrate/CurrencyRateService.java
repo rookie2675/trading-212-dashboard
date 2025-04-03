@@ -24,7 +24,8 @@ public class CurrencyRateService {
     public Map<String, Double> fetch(String baseCurrency, String[] targetCurrencies) {
         String uriString = buildUriString(baseCurrency, targetCurrencies);
         CurrencyRateApiResponse response = restTemplate.getForObject(uriString, CurrencyRateApiResponse.class);
-        return response.getData();
+        assert response != null;
+        return response.data();
     }
 
     private String buildUriString(String baseCurrency, String[] targetCurrencies) {
