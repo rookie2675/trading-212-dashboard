@@ -28,7 +28,7 @@ public class CurrencyRateService {
     }
 
     private String buildUriString(String baseCurrency, String[] targetCurrencies) {
-        return UriComponentsBuilder.fromHttpUrl(URL)
+        return UriComponentsBuilder.fromUriString(URL)
                 .queryParam("base_currency", baseCurrency)
                 .queryParam("currencies", String.join(",", targetCurrencies))
                 .queryParam("apikey", apiKey)
